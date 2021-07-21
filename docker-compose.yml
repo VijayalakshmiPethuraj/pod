@@ -1,0 +1,104 @@
+
+ version: '3.7'
+services:
+ authorization-microservice:
+   
+    environment:
+      HOST_URL: 18.190.158.214
+     
+    image: authorization-microservice
+    networks:
+      - app-network
+    ports:
+      - "9095:9095"
+    restart: always
+ 
+  process-pension-microservice:
+ 
+    environment:
+     HOST_URL: 18.190.158.214
+     
+    image: process-pension-microservice
+    networks:
+      - app-network
+    ports:
+      - "9095:9095"
+    restart: always
+
+  pension-disbursement-microservice:
+  
+    environment:
+     HOST_URL:18.190.158.214
+     
+    image: pension-disbursement-microservice
+    networks:
+      - app-network
+    ports:
+      - "9091:9091"
+    restart: always
+    
+    pensioner-detail-microservice:
+  
+    environment:
+     HOST_URL:18.190.158.214
+     
+    image: pensioner-detail-microservice
+    networks:
+      - app-network
+    ports:
+      - "9092:9092"
+    restart: always
+ 
+ 
+  version: '3.7'
+services:
+ authorization-microservice:
+   
+    environment:
+      HOST_URL: 18.190.158.214
+     
+    image: authorization-microservice
+    networks:
+      - app-network
+    ports:
+      - "9095:9095"
+    restart: always
+ 
+  process-pension-microservice:
+ 
+    environment:
+     HOST_URL: 18.190.158.214
+     
+    image: process-pension-microservice
+    networks:
+      - app-network
+    ports:
+      - "9095:9095"
+    restart: always
+
+  pension-disbursement-microservice:
+  
+    environment:
+     HOST_URL:18.190.158.214
+     
+    image: pension-disbursement-microservice
+    networks:
+      - app-network
+    ports:
+      - "9091:9091"
+    restart: always
+    
+    pensioner-detail-microservice:
+  
+    environment:
+     HOST_URL:18.190.158.214
+     
+    image: pensioner-detail-microservice
+    networks:
+      - app-network
+    ports:
+      - "9092:9092"
+    restart: always
+ 
+ 
+ 
